@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfoliot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: white
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            margin: 20px 0px;
+            /* background-color: rgb(195, 188, 115); */
+        }
+
+        nav ul {
+            display: flex;
+
+        }
+
+        li {
+            margin: 0 30px;
+            list-style-type: none;
+            font-weight: 600;
+        }
+
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: rgba(15, 61, 213, 1);
+            letter-spacing: 2px;
+
+            margin: 0;
+            line-height: 1;
+            border-radius: 25px;
+            padding: 8px;
+        }
+
+        nav>div:first-child {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li a:hover {
+            font-size: 1.04rem;
+            color: rgb(127, 6, 240);
+            transition: transform 0.3s ease, box-shadow ease;
+        }
+
+
+        nav> :nth-child(3) {
+            background-color: rgba(15, 61, 213, 1);
+            height: 40px;
+            border-radius: 24px;
+            color: white;
+        }
+
+        nav p {
+            text-align: center;
+            margin: 8px 10px;
+        }
+
+        .title {
+            background-color: rgba(15, 61, 213, 1);
+            border-radius: 24px;
+            color: white;
+        }
+
+        .title p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 8px 10px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .left div {
+            font-size: 2.5rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .firstSection .left .btn {
+            padding: 10px;
+            background-color: #374ca2;
+            color: white;
+            border: 1px solid black;
+            border-radius: 11px;
+            font-size: 20px;
+        }
+
+        .right img {
+            width: 350px;
+            border-radius: 100%;
+        }
+
+        span {
+            color: blueviolet;
+            font-size: larger;
+
+        }
+
+        #element {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div logo-box>
+                <h1 class="logo">&lt;/&gt;</h1>
+                <div class="title">
+                    <p>aman's portfolio</p>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+
+            <div>
+                <p>contact us</p>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="left">
+                <div>Hey! i'm <span>Aman sharma</span> </div>
+                <div> and i am a web devloper</div>
+                I learned
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn"> download Resume</button>
+                    <button class="btn">Visite Github</button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="web.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Express.js', 'Node.js', 'Mongodb', 'Css', 'Javascript'],
+            typeSpeed: 40,
+        });
+    </script>
+</body>
+
+</html>
