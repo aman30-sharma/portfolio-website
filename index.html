@@ -16,7 +16,8 @@
         }
 
         body {
-            background-color: white
+            
+            height: 80vh
         }
 
         nav {
@@ -25,7 +26,6 @@
             align-items: center;
             height: 50px;
             margin: 20px 0px;
-            /* background-color: rgb(195, 188, 115); */
         }
 
         nav ul {
@@ -33,7 +33,7 @@
 
         }
 
-        li {
+        nav ul li {
             margin: 0 30px;
             list-style-type: none;
             font-weight: 600;
@@ -43,7 +43,8 @@
         .logo {
             font-size: 2rem;
             font-weight: bold;
-            background-color: rgba(15, 61, 213, 1);
+            background-color: #373795;
+            ;
             letter-spacing: 2px;
 
             margin: 0;
@@ -63,15 +64,15 @@
             color: black;
         }
 
-        li a:hover {
+        nav ul li a:hover {
             font-size: 1.04rem;
             color: rgb(127, 6, 240);
-            transition: transform 0.3s ease, box-shadow ease;
+            transition: font-size, ease;
         }
 
 
         nav> :nth-child(3) {
-            background-color: rgba(15, 61, 213, 1);
+            background-color: #373795;
             height: 40px;
             border-radius: 24px;
             color: white;
@@ -83,7 +84,7 @@
         }
 
         .title {
-            background-color: rgba(15, 61, 213, 1);
+            background-color: #373795;
             border-radius: 24px;
             color: white;
         }
@@ -133,6 +134,50 @@
         #element {
             font-size: 1.5rem;
         }
+
+        footer {
+            background-color: #373795;
+            margin-top: 200px;
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            padding: 30px 100px;
+        }
+
+        .footer ul li {
+            font-weight: 500;
+            list-style: none;
+        }
+
+        .footer .first-footer {
+            font-size: 1.5rem;
+            width: 23px;
+        }
+
+        .social-icon ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icon ul .icons{
+            list-style: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+        }
+
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            margin: 8px 0;
+        }
+
     </style>
 </head>
 
@@ -147,10 +192,10 @@
             </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">blog</a></li>
+                <li class="menu"><a href="#">Home</a></li>
+                <li class="menu"><a href="#">service</a></li>
+                <li class="menu"><a href="#">about</a></li>
+                <li class="menu"><a href="#">blog</a></li>
             </ul>
 
             <div>
@@ -176,7 +221,62 @@
                 <img src="web.png" alt="">
             </div>
         </section>
+
+
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first-footer">
+                aman's web devloper
+            </div>
+
+            <div class='2nd-footer'>
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>services</li>
+                    <li>about us</li>
+                </ul>
+            </div>
+            <div class='2nd-footer'>
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>services</li>
+                    <li>about us</li>
+                </ul>
+            </div>
+            <div class='2nd-footer'>
+                <ul>
+                    <li>home</li>
+                    <li>contact</li>
+                    <li>services</li>
+                    <li>about us</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="second-footer">
+
+            <div class="footer-rights">
+               &#169; amansportfolio.com | All right reserved
+            </div>
+
+            <div class="social-icon">
+                <ul>
+                    <li class="fifth icons"><a href="https://github.com/aman30-sharma"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="fouth icons"><a href="https://www.linkedin.com/in/sharma-aman-856350414"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li class="first icons"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="second icons"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="third icons"><i class="fa-brands fa-whatsapp"></i></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="https://kit.fontawesome.com/498f0c6c42.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -184,6 +284,7 @@
             typeSpeed: 40,
         });
     </script>
+
 </body>
 
 </html>
